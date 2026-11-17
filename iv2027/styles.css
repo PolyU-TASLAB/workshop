@@ -1,0 +1,103 @@
+:root {
+  --text: #1a1a1a;
+  --muted: #5b6270;
+  --line: #e6e8ec;
+  --bg: #ffffff;
+  --bg-soft: #f6f7f9;
+  --accent: #0b5cd5;
+  --accent-dark: #0847a6;
+  --tbc: #fff3bf;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--text);
+  background: var(--bg);
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Top navigation */
+.nav {
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--line);
+}
+.nav-inner {
+  max-width: 1080px; margin: 0 auto; padding: 0 16px;
+  display: flex; gap: 22px; overflow-x: auto; white-space: nowrap;
+}
+.nav a { color: var(--text); font-size: 14px; padding: 14px 0; display: inline-block; }
+.nav a:hover { color: var(--accent); text-decoration: none; }
+
+.container { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+
+/* Hero */
+.hero { padding: 40px 0 28px; border-bottom: 1px solid var(--line); }
+.hero .logo { height: 56px; margin-bottom: 16px; }
+.hero .badge { font-size: 13px; font-weight: 600; letter-spacing: .04em; color: var(--accent); text-transform: uppercase; }
+.hero h1 { font-size: clamp(26px, 4vw, 38px); line-height: 1.2; margin: 6px 0 8px; font-weight: 700; }
+.hero .subtitle { font-size: 19px; color: var(--muted); margin: 0 0 14px; }
+.hero .meta { color: var(--muted); font-size: 15px; margin: 0 0 20px; }
+.buttons { display: flex; flex-wrap: wrap; gap: 10px; }
+.btn {
+  display: inline-block; padding: 10px 18px; border-radius: 8px; font-weight: 600; font-size: 15px;
+  border: 1px solid var(--line); color: var(--text); background: #fff;
+}
+.btn:hover { text-decoration: none; border-color: #c9ced6; }
+.btn.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+.btn.primary:hover { background: var(--accent-dark); }
+
+/* Sections */
+section { padding: 40px 0; border-bottom: 1px solid var(--line); }
+section:last-of-type { border-bottom: 0; }
+h2 { font-size: 26px; margin: 0 0 16px; font-weight: 700; }
+h3 { font-size: 18px; margin: 22px 0 8px; }
+p { margin: 0 0 14px; }
+ul { margin: 0 0 14px; padding-left: 22px; }
+li { margin-bottom: 6px; }
+.tbc { background: var(--tbc); padding: 0 4px; border-radius: 3px; }
+.note { color: var(--muted); font-size: 14px; }
+
+/* Themes */
+.themes { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; margin-top: 8px; }
+.theme { background: var(--bg-soft); border: 1px solid var(--line); border-radius: 10px; padding: 16px; }
+.theme b { display: block; margin-bottom: 4px; }
+.theme span { color: var(--muted); font-size: 14px; line-height: 1.5; }
+
+/* Tables */
+table { width: 100%; border-collapse: collapse; font-size: 15px; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { background: var(--bg-soft); font-weight: 600; }
+td:first-child { white-space: nowrap; font-variant-numeric: tabular-nums; color: var(--muted); }
+.table-wrap { overflow-x: auto; }
+
+/* People cards */
+.people { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 22px; }
+.person { text-align: center; }
+.person .photo {
+  width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin: 0 auto 10px; display: block;
+  background: var(--bg-soft); border: 1px solid var(--line);
+}
+.person .initials {
+  width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 10px;
+  display: flex; align-items: center; justify-content: center;
+  background: #e8eef9; color: var(--accent); font-weight: 700; font-size: 32px;
+}
+.person .name { font-weight: 600; line-height: 1.3; }
+.person .aff { color: var(--muted); font-size: 14px; line-height: 1.4; margin-top: 4px; }
+.person .role { font-size: 13px; color: var(--accent); margin-top: 4px; }
+
+footer { padding: 24px 0 40px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); }
+
+@media (max-width: 600px) {
+  section { padding: 30px 0; }
+  .people { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .person .photo, .person .initials { width: 96px; height: 96px; font-size: 26px; }
+}
