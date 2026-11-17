@@ -20,6 +20,7 @@
     <a href="#call-for-papers">Call for Papers</a>
     <a href="#dates">Important Dates</a>
     <a href="#schedule">Schedule</a>
+    <a href="#past-workshops">Past Workshops</a>
     <a href="#organizers">Organizers</a>
     <a href="#location">Location</a>
     <a href="#contact">Contact</a>
@@ -32,7 +33,7 @@
     <!-- <img class="logo" src="images/iv2027_logo.png" alt="IEEE IV 2027"> -->
     <div class="badge">IEEE IV 2027 Workshop</div>
     <h1>Workshop on Trustworthy Embodied AI for Intelligent Vehicles</h1>
-    <p class="subtitle">From Foundation Models to Safe, Certifiable Autonomy in Open Traffic Environments</p>
+    <p class="subtitle">From Foundation Models to Safe, Certifiable Autonomy in Urban Environments</p>
     <p class="meta">
       IEEE Intelligent Vehicles Symposium (IV 2027) &bull; Perth, Australia &bull;
       Date: <span class="tbc">June 2027, TBA</span> &bull; Half-day, hybrid (in person + Zoom)
@@ -50,21 +51,21 @@
   <section id="introduction">
     <h2>Introduction</h2>
     <p>
-      Foundation models, vision-language-action (VLA) models and world models are moving intelligent vehicles
-      from modular pipelines towards end-to-end embodied intelligence. Yet impressive demonstrations are not
-      trustworthy autonomy. On public roads, in dense cities, in the air and in mines, vehicles face distribution
-      shift, degraded GNSS and sensing, hallucinated actions, scarce corner-case data and uncertain human intent.
+      Foundation models, vision-language-action (VLA) models and world models are increasingly used in intelligent
+      vehicles, and end-to-end driving is becoming a realistic alternative to modular pipelines. In real traffic,
+      however, these vehicles face distribution shift, degraded GNSS and sensor data, limited corner-case data and
+      uncertain behaviour of other road users, and a learned policy may produce wrong actions without any warning.
     </p>
     <p>
-      A vehicle that relies on learned policies must not fail silently: it must quantify uncertainty, monitor its
-      own integrity, expose the limits of its decisions and fall back safely. This workshop brings together
-      researchers in foundation models and robot learning with experts in localization, perception, 3D scene
-      reconstruction, planning, human factors and safety assurance. Our central question is:
+      For safe operation, a vehicle needs to estimate the uncertainty of its outputs, monitor the integrity of its
+      localization and perception, and switch to a safe fallback when its confidence is low. This workshop invites
+      researchers working on foundation models and robot learning, together with researchers in localization,
+      perception, 3D scene reconstruction, planning, human factors and safety, to discuss how learning-based
+      intelligent vehicles can be made robust, transparent and safe in urban environments.
     </p>
-    <p><b>How can embodied AI in intelligent vehicles remain robust, transparent, accountable and safety-assured in open traffic environments?</b></p>
     <p>
-      The programme combines invited talks, failure-case lightning talks, a peer-reviewed poster session,
-      "Ask-a-senior" tables for students and early-career researchers, and a panel discussion driven by a live audience poll.
+      The half-day program includes invited talks, spotlight talks and a poster session for accepted papers,
+      small-group discussions with the speakers during the coffee break, and a panel discussion.
     </p>
   </section>
 
@@ -72,13 +73,13 @@
     <h2>Themes and Topics</h2>
     <div class="themes">
       <div class="theme"><b>1. Foundation models, world models and scene reconstruction</b>
-        <span>End-to-end driving and VLA models, multimodal scene reasoning, 3D Gaussian Splatting and NeRF for mapping and digital twins, generative simulation and data engines for corner cases.</span></div>
+        <span>End-to-end driving and VLA models, multimodal scene understanding, 3D Gaussian Splatting and NeRF for mapping and digital twins, and generative simulation of corner cases.</span></div>
       <div class="theme"><b>2. Trustworthy autonomy</b>
-        <span>Uncertainty quantification, out-of-distribution detection, integrity monitoring of positioning and perception, runtime verification, safe fallback, certification of learned components.</span></div>
+        <span>Uncertainty quantification, out-of-distribution detection, integrity monitoring of positioning and perception, runtime verification, safe fallback and certification of learned components.</span></div>
       <div class="theme"><b>3. Human-centred and connected autonomy</b>
-        <span>Intent modelling of road users, shared control and takeover, explainability to drivers and regulators, V2X and cooperative perception.</span></div>
+        <span>Intent prediction of road users, shared control and takeover, explainability, V2X and cooperative perception.</span></div>
       <div class="theme"><b>4. Deployment and evaluation</b>
-        <span>Closed-loop testing in reconstructed real-world scenes, sim-to-real transfer, benchmarks and datasets, onboard compute limits, low-cost autonomy for emerging economies.</span></div>
+        <span>Closed-loop testing in reconstructed scenes, sim-to-real transfer, benchmarks and datasets, onboard computing limits, and low-cost autonomy for less-structured traffic.</span></div>
     </div>
   </section>
 
@@ -91,8 +92,8 @@
   <section id="call-for-papers">
     <h2>Call for Papers</h2>
     <p>
-      We invite contributions on trustworthy embodied AI for intelligent vehicles, including ground vehicles,
-      UAVs and other autonomous platforms. Topics of interest include, but are not limited to:
+      We invite papers on learning-based intelligent vehicles, including ground vehicles, UAVs and other
+      autonomous platforms. Topics of interest include, but are not limited to, the following.
     </p>
     <ul>
       <li>Foundation, VLA and world models for perception, prediction, planning and control</li>
@@ -114,8 +115,8 @@
       <span class="tbc">TBA (PaperPlaza)</span>.
     </p>
     <p>
-      Every accepted paper is presented as a poster and a 90-second <b>failure-case lightning talk</b>: show us one
-      case where your method fails and what it teaches us.
+      Every accepted paper is presented as a poster and in a 90-second spotlight talk. We encourage authors to
+      include at least one case in which their method fails.
     </p>
 
     <h3>Awards</h3>
@@ -142,14 +143,32 @@
       <table>
         <tr><th>Time</th><th>Session</th></tr>
         <tr><td>08:30&ndash;08:40</td><td>Opening remarks</td></tr>
-        <tr><td>08:40&ndash;10:10</td><td>Invited talks 1&ndash;3: foundation and world models; uncertainty and integrity</td></tr>
-        <tr><td>10:10&ndash;10:40</td><td>Failure-case lightning talks of accepted papers</td></tr>
-        <tr><td>10:40&ndash;11:10</td><td>Coffee break, poster session and "Ask-a-senior" tables</td></tr>
-        <tr><td>11:10&ndash;12:10</td><td>Invited talks 4&ndash;5: human-centred and connected autonomy; deployment</td></tr>
+        <tr><td>08:40&ndash;10:10</td><td>Invited talks 1&ndash;3 on foundation and world models, uncertainty and integrity</td></tr>
+        <tr><td>10:10&ndash;10:40</td><td>Spotlight talks of accepted papers (90 s each)</td></tr>
+        <tr><td>10:40&ndash;11:10</td><td>Coffee break, poster session and small-group discussions with speakers</td></tr>
+        <tr><td>11:10&ndash;12:10</td><td>Invited talks 4&ndash;5 on human-centred and connected autonomy and on deployment</td></tr>
         <tr><td>12:10&ndash;12:30</td><td>Panel discussion, awards and closing</td></tr>
       </table>
     </div>
-    <p class="note" style="margin-top:10px">Times are local Perth time (AWST, UTC+8). All talks and the panel will be streamed on Zoom; link to be posted here.</p>
+    <p class="note" style="margin-top:10px">Times are local Perth time (AWST, UTC+8).</p>
+
+    <h3>Remote Participation</h3>
+    <p>
+      The workshop will be hybrid. Talks and the panel will be streamed on Zoom, and online participants can ask
+      questions through Slido, which the session chair will read out. Speakers and authors who cannot travel to Perth
+      can present a pre-recorded talk and answer questions live. With the speakers&rsquo; permission, slides and
+      recordings will be made available on this website after the workshop. The Zoom link will be posted here.
+    </p>
+  </section>
+
+  <section id="past-workshops">
+    <h2>Previous Workshops by the Organizers</h2>
+    <ul>
+      <li>Intelligent Vehicle Meets Urban (IVMeetsUrban), IEEE ITSC, five editions since 2021, most recently at
+        <a href="https://sites.google.com/view/ivurban2026itsc" target="_blank" rel="noopener">ITSC 2026 in Naples, Italy</a></li>
+      <li><a href="https://robotmeetsranging.tech/" target="_blank" rel="noopener">1st Workshop on Robot Meets GNSS and Ranging for Seamless Autonomy</a>,
+        IEEE ICRA 2026, Vienna, Austria</li>
+    </ul>
   </section>
 
   <section id="organizers">
@@ -184,6 +203,8 @@
   const speakers = [
     { name: "Prof. Zhenhui (Jessie) Li", aff: "The Hong Kong Polytechnic University", photo: "images/jessie_li.jpg" },
     { name: "Dr. Jianhao Jiao", aff: "Lion Rock AI Lab", photo: "images/jianhao_jiao.jpg" },
+    { name: "Prof. Ahmed El-Mowafy", aff: "Curtin University", photo: "images/ahmed_elmowafy.jpg" },
+    { name: "Dr. Mao Shan", aff: "The University of Sydney", photo: "images/mao_shan.jpg" },
     { name: "TBA", aff: "", photo: "" },
     { name: "TBA", aff: "", photo: "" },
   ];
