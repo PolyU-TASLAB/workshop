@@ -40,7 +40,7 @@ a:hover { text-decoration: underline; }
 
 /* Hero */
 .hero { padding: 40px 0 28px; border-bottom: 1px solid var(--line); }
-.hero .logo { height: 56px; margin-bottom: 16px; }
+.hero .logo { height: 110px; width: auto; margin-bottom: 14px; display: block; }
 .hero .badge { font-size: 13px; font-weight: 600; letter-spacing: .04em; color: var(--accent); text-transform: uppercase; }
 .hero h1 { font-size: clamp(26px, 4vw, 38px); line-height: 1.2; margin: 6px 0 8px; font-weight: 700; }
 .hero .subtitle { font-size: 19px; color: var(--muted); margin: 0 0 14px; }
